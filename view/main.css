@@ -1,0 +1,125 @@
+
+:root{
+    --themeColor: rgb(24, 32, 33);
+    --light: rgb(171, 253, 226);
+    --textColor: rgb(0, 128, 107);
+
+
+}
+html{
+    background-color: var(--themeColor);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 1px #5dc5bf;
+    margin-bottom: 5vh;
+    position: sticky;
+  top: 0;
+  overflow: hidden;
+
+    .searchbar{
+        width: 30vw;
+        height: 2vw;
+        margin : 3vw;
+        background-color: var(--light);
+        color: var(--textColor);
+       font-size: 1vw;
+       border-radius: 50px;
+       text-align: center;
+       font-family: 'Times New Roman', Times, serif;
+       margin-right: 7vw;
+    }
+}
+#logo-img{
+    width: 10vw;
+    height: 10vw;
+    margin-right: 7vw;
+    margin-left: 2vw;
+  
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    >input{
+    background-color: var(--light);
+    height: 2vw;
+    width: 10vw;
+    margin-right:3vw ;
+    font-size: 0.8vw;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+    }
+
+    button{
+        height: 2vw;
+        width: 5vw;
+        font-size: 0.8vw;
+        border-radius: 50px;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(0, 255, 208);
+        color: var(--themeColor);
+
+
+    }
+
+    
+.folders{
+    color: var(--textColor);
+    >h1{
+        font-size: 4vw;
+        margin-left: 33vw;
+
+    }
+
+    >.folderCollection{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+   >div >.folder{
+        background-color:var(--light);
+        width: 10vw;
+        height: 7vw;
+        border-radius: 5px;
+        box-shadow: 2px 2px;
+        padding: 5px;
+        margin: 2vw;
+        position: relative;
+
+      >.fol-title{
+            font-size: 0.8vw;
+            margin-left: 5px;
+        }
+
+        >button{
+            top: 80%;
+            left: 80%;
+            transform: translate(-80%,-80%);
+            -ms-transform: translate(-80%,-80%);
+            position: absolute;
+        }
+        >button:hover{
+            background-color:rgb(47, 238, 255);
+        }
+    }
+}
+
+
+
+
+/* folder details */
+
+.folder-title{
+    font-size: 5vw;
+    color: var(--textColor);
+    
+}

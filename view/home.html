@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./img/logo.png" alt="" id="logo-img">
+        </div>
+        <div><input class="searchbar" placeholder="search folder" type="text"></div>
+        <div><form action="http://localhost:3000/folders/addFolder" method="post">
+             <input type="text" id="title"  placeholder="folder title" name="title">
+             <button id="addFolderButton">Add Folder</button>
+         </form></div>
+    </div>
+   
+
+    <div class="folders">
+        <h1>ALL FOLDERS</h1>
+        <div class="folderCollection">
+            
+        </div>
+       
+    </div>
+
+    <script src='main.js'></script>
+</body>
+</html>
