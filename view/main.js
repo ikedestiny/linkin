@@ -37,7 +37,7 @@ getAllFolders()
     })
     .catch((error) => {
       alert(error)
-      console.error('Error:', error);
+      console.log('Error:', error);
     });
 }
 
@@ -73,11 +73,14 @@ function addFolderToCoolection(folderTitle,folderId){
   let openButton = document.createElement('button')
  // openButton.classList.add('open-folder-button')
   openButton.innerHTML = 'Open'
-  openButton.onclick = () => location.href = `http://127.0.0.1:5500/view/links.html?title=${folderTitle}`;
+  openButton.onclick = () => location.href = `http://127.0.0.1:5500/view/links.html?t=${folderTitle}&i=${folderId}`;
   folderDiv.appendChild(title)
   folderDiv.appendChild(openButton)
   folderCollection.appendChild(folderDiv)
   console.log(folderDiv.id)
 }
 
+document.querySelector('.logo').addEventListener('click',()=>{
+  location.href = `http://127.0.0.1:5500/view/home.html`;
+})
 

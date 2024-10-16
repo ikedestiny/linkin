@@ -43,7 +43,8 @@ html{
 form {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     >input{
     background-color: var(--light);
     height: 2vw;
@@ -118,8 +119,51 @@ form {
 
 /* folder details */
 
+.add-new-link{
+    background-color: var(--light);
+    height: 2vw;
+    width: 10vw;
+    margin-right:3vw ;
+    font-size: 0.8vw;
+    border-radius: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .folder-title{
-    font-size: 5vw;
+    font-size: 3vw;
     color: var(--textColor);
+    padding-right: 100px;
     
+}
+
+.link{
+    background-color:var(--light);
+    width: 20vw;
+    height: 14vw;
+    border-radius: 5px;
+    box-shadow: 2px 2px;
+    padding: 5px;
+    margin: 2vw;
+    position: relative;
+    
+    >a{
+        text-decoration: underline;
+        color:teal;
+        top: 80%;
+            left: 80%;
+            transform: translate(-80%,-80%);
+            -ms-transform: translate(-80%,-80%);
+            position: absolute;
+    }
+    
+    >p{
+        background-color: var(--themeColor);
+        font-size: 1.2vw;
+        margin-left: 5px;
+        color: teal;
+        padding: 5px;
+        overflow: auto;
+        height: auto;
+    }
 }
